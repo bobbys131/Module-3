@@ -528,7 +528,7 @@ Transform:
   m_GameObject: {fileID: 676920354}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 1108476204}
   - component: {fileID: 1108476205}
   - component: {fileID: 1108476206}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.439
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1021,6 +1021,11 @@ PrefabInstance:
       propertyPath: canTurnEverySeconds
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010591715100, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: clearanceCheckMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011734077242, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}
       propertyPath: clearanceCheckMask.m_Bits
@@ -1033,7 +1038,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 676920356}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1648992812}
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!4 &1648992806 stripped
 Transform:
@@ -1041,6 +1050,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1648992805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1648992807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1648992805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1648992812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648992807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 643b7d77c881c5245a514e66e5a88e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAction:
+    actionPath: /actions/default/in/Move
+    needsReinit: 0
+  playerSpeed: 2
 --- !u!1 &1853050003
 GameObject:
   m_ObjectHideFlags: 0
