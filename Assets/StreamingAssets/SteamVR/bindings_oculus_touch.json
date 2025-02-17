@@ -189,11 +189,7 @@
                "path" : "/user/hand/right/input/trigger"
             },
             {
-               "inputs" : {
-                  "north" : {
-                     "output" : "/actions/default/in/teleport"
-                  }
-               },
+               "inputs" : {},
                "mode" : "dpad",
                "parameters" : {
                   "deadzone_pct" : "25",
@@ -217,14 +213,7 @@
                "path" : "/user/hand/right/input/joystick"
             },
             {
-               "inputs" : {
-                  "east" : {
-                     "output" : "/actions/default/in/snapturnright"
-                  },
-                  "west" : {
-                     "output" : "/actions/default/in/snapturnleft"
-                  }
-               },
+               "inputs" : {},
                "mode" : "dpad",
                "parameters" : {
                   "deadzone_pct" : "85",
@@ -289,15 +278,6 @@
                },
                "mode" : "joystick",
                "path" : "/user/hand/left/input/joystick"
-            },
-            {
-               "inputs" : {
-                  "position" : {
-                     "output" : "/actions/default/in/move"
-                  }
-               },
-               "mode" : "joystick",
-               "path" : "/user/hand/right/input/joystick"
             }
          ]
       },
@@ -332,9 +312,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "oculus_touch",
-   "description" : "testing move",
+   "description" : "testing move/teleport",
    "interaction_profile" : "",
-   "name" : "oculus_touch",
+   "name" : "move/teleport",
    "options" : {},
    "simulated_actions" : []
 }

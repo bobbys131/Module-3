@@ -528,7 +528,7 @@ Transform:
   m_GameObject: {fileID: 676920354}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 1108476204}
   - component: {fileID: 1108476205}
   - component: {fileID: 1108476206}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.71
+      value: 0.439
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1071,6 +1071,7 @@ MonoBehaviour:
   moveAction:
     actionPath: /actions/default/in/Move
     needsReinit: 0
+  playerSpeed: 2
 --- !u!1 &1853050003
 GameObject:
   m_ObjectHideFlags: 0
