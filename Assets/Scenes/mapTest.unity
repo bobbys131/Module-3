@@ -15819,6 +15819,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 608182269104742814, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1095977751074928892, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
         type: 3}
       propertyPath: m_Name
@@ -15928,6 +15933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175088802000650430, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Killbox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16628,6 +16638,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 608182269104742814, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1095977751074928892, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
         type: 3}
       propertyPath: m_Name
@@ -16737,6 +16752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175088802000650430, guid: 49d96bcbc9f5f2a4185ff53aad548d37,
+        type: 3}
+      propertyPath: m_TagString
+      value: Killbox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17256,6 +17276,10 @@ PrefabInstance:
     - target: {fileID: 153878, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_Name
       value: Teleporting (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 153878, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17974,6 +17998,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7399848291022609797, guid: 176556cc2e5847b4782267a2bc203f8e,
+        type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 1726402098}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
