@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public GameObject SpawnPoint;
-    public GameObject EnemyKillBox;
-    public string sceneName;
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject == EnemyKillBox.gameObject)
+        if (collider.CompareTag("Killbox"))
         {
             transform.position = SpawnPoint.transform.position;
         }
