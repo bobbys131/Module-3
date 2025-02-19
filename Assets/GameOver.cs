@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     {
         if (collider.CompareTag("Killbox"))
         {
+            collider.transform.parent.GetComponent<EnemySight>().AlarmState = 0;
             transform.position = SpawnPoint.transform.position;
         }
     }

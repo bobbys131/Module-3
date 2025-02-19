@@ -11,7 +11,7 @@ public class EnemySight : MonoBehaviour
     public Transform player;
     public float alarmDecayRate;
     public float alarmGainRate;
-    private float AlarmState;
+    public float AlarmState;
     public GameObject PP1;
     public GameObject PP2;
     public GameObject PP3;
@@ -23,6 +23,7 @@ public class EnemySight : MonoBehaviour
         Debug.Log("enemySight Started");
         patrolStatus = 1;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        AlarmState = 0;
     }
 
     // Update is called once per frame
